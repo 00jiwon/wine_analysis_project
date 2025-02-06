@@ -9,3 +9,5 @@ git commit -m "🔄 업로드: 최신 분석 결과 반영"
 git push origin master
 
 echo "✅ GitHub에 업로드 완료!"
+
+# 터미널 실행: ./upload_to_github.sh

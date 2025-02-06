@@ -8,3 +8,5 @@ dependencies:
   - conda
   - pandas
 prefix: /opt/anaconda3/envs/test1026
+
+# 터미널 실행: conda env export --from-history > environment.yml
