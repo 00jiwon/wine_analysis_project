@@ -17,11 +17,17 @@ output.append(f"📌 데이터셋 크기: {num_rows} 행, {num_cols} 열\n")
 output.append("📌 각 특성의 평균과 표준편차:")
 output.append(df.describe().loc[['mean', 'std']].to_string())
 
-# 3. 특정 특성(alcohol)의 최대값, 최소값 출력
+# 3-1. 특정 특성(alcohol)의 최대값, 최소값 출력
 alcohol_max = df["alcohol"].max()
 alcohol_min = df["alcohol"].min()
 output.append(f"\n📌 'alcohol' 특성의 최대값: {alcohol_max}")
 output.append(f"📌 'alcohol' 특성의 최소값: {alcohol_min}")
+
+# 3-2. 특정 특성(malic_acid)의 최대값, 최소값 출력
+alcohol_max = df["malic_acid"].max()
+alcohol_min = df["malic_acid"].min()
+output.append(f"\n📌 'malic_acid' 특성의 최대값: {alcohol_max}")
+output.append(f"📌 'malic_acid' 특성의 최소값: {alcohol_min}")
 
 # 결과를 output.txt 파일에 저장
 with open("/home/jiwon/project/python/homework/wine_analysis_project/output.txt", "w", encoding="utf-8") as f:
